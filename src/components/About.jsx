@@ -22,7 +22,7 @@ const About = () => {
       id="about"
       className="relative z-10 px-6 py-20 md:px-20 bg-gradient-to-b from-[#1f0e0e] to-[#000000] text-white overflow-hidden custom-cursor"
     >
-      {/* Floating Background Animation */}
+    
       <div className="absolute inset-0  bg-cover opacity-[0.03] pointer-events-none z-0" />
 
       <motion.div
@@ -50,7 +50,7 @@ const About = () => {
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 max-w-6xl mx-auto relative z-10">
-        {[ // Cards data
+        {[ 
           {
             icon: <Coffee size={40} className="mx-auto text-yellow-400 mb-4" />,
             title: "Finest Coffee Beans",
@@ -83,7 +83,7 @@ const About = () => {
         ))}
       </div>
 
-      {/* CTA Button */}
+      
       <div className="text-center mt-16 z-10 relative">
         <motion.a
           href="#products"
