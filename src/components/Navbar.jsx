@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ShoppingCart } from "lucide-react"; // Optional: install lucide-react or use emoji
-import { FiX } from "react-icons/fi"; // For close icon in cart sidebar
+import { ShoppingCart } from "lucide-react"; 
+import { FiX } from "react-icons/fi"; 
 
 const links = [
   { href: "#home", label: "Home" },
@@ -15,7 +15,7 @@ const Navbar = ({ dark, toggleDarkMode }) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("#home");
   const [showCart, setShowCart] = useState(false);
-  const [cartCount, setCartCount] = useState(2); // Example count
+  const [cartCount, setCartCount] = useState(2);
 
   useEffect(() => {
     const onScroll = () => {
@@ -50,7 +50,7 @@ const Navbar = ({ dark, toggleDarkMode }) => {
       >
         <h1 className="text-3xl font-bold tracking-widest drop-shadow-lg"></h1>
 
-        {/* Desktop Links */}
+       
         <div className="hidden md:flex gap-6 items-center">
           {links.map((link) => (
             <a
@@ -65,7 +65,7 @@ const Navbar = ({ dark, toggleDarkMode }) => {
             </a>
           ))}
 
-          {/* Cart Button */}
+       
           <motion.button
             whileHover={{ scale: 1.2 }}
             animate={{
@@ -90,7 +90,6 @@ const Navbar = ({ dark, toggleDarkMode }) => {
           </button>
         </div>
 
-        {/* Hamburger */}
         <button
           className="md:hidden z-50"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -103,7 +102,7 @@ const Navbar = ({ dark, toggleDarkMode }) => {
         </button>
       </motion.nav>
 
-      {/* Mobile Menu */}
+ 
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -137,7 +136,6 @@ const Navbar = ({ dark, toggleDarkMode }) => {
         )}
       </AnimatePresence>
 
-      {/* 🔸 Cart Sidebar Modal */}
       <AnimatePresence>
         {showCart && (
           <motion.div
