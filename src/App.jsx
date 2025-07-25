@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 
 
 
+
 function FloatingBeans() {
   const beansRef = useRef([]);
 
@@ -106,7 +107,7 @@ function AnimatedCoffee() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  return <primitive object={glb.scene} ref={modelRef} position={[0, -1.5, 1]} />;
+  return <primitive object={glb.scene} ref={modelRef} position={[0, -1.7, 1]} />;
 }
 
 function AnimatedModelCanvas() {
@@ -160,9 +161,10 @@ export default function App() {
 
   return (
     <Relodd>
+     
       <Login />
       <div id="home">
-      <div className={`relative min-h-screen font-sans ${dark ? "bg-black text-white" : "bg-gradient-to-br from-[#d7b59d] via-[#e7cba9] to-[#d7b59d] text-white"} scroll-smooth snap-y snap-mandatory mr-0 `}>
+      <div className={`relative min-h-screen font-sans ${dark ? "bg-black text-white" : "bg-gradient-to-br from-[#d7b59d] via-[#e7cba9] to-[#d7b59d] text-white"} scroll-smooth snap-y snap-mandatory mr-0 custom-cursor`}>
         <img
           ref={bgRef}
           src="/backgrnd.jpg"
@@ -215,7 +217,7 @@ export default function App() {
         color: "#ffcb74",
         textShadow: "0px 0px 15px #ffcb74",
       }}
-      className="text-5xl md:text-8xl font-extrabold drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-[#ffcb74] via-white to-[#ffcb74] cursor-default transition-all mt-80 mb-"
+      className="text-5xl md:text-8xl font-extrabold drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-[#ffcb74] via-white to-[#ffcb74] cursor-default transition-all mt-70 mb-"
     >
       {char}
     </motion.span>
@@ -272,6 +274,7 @@ export default function App() {
         <Footer />
         </div>
       </div>
+      
     </Relodd>
   );
 }

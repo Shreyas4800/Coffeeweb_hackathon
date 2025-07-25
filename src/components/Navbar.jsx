@@ -44,7 +44,7 @@ const Navbar = ({ dark, toggleDarkMode }) => {
           scrolled
             ? "backdrop-blur-md bg-[#3e1f0dbb] shadow-xl shadow-yellow-900/30"
             : "bg-transparent"
-        } text-white`}
+        } text-white custom-cursor`}
         initial={{ y: -50 }}
         animate={{ y: 0 }}
       >

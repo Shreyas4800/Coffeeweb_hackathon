@@ -26,7 +26,7 @@ export default function BannerSlider() {
   }, []);
 
   return (
-    <section className="p-10 md:p-20 bg-gradient-to-br from-[#7b4a2b] via-[#a9765a] to-[#7b4a2b] min-h-screen text-black">
+    <section className="p-10 md:p-20 bg-gradient-to-br from-[#7b4a2b] via-[#a9765a] to-[#7b4a2b] min-h-screen text-black custom-cursor">
       <div className="banner">
         <div className="slider" style={{ "--quantity": 10 }}>
           {[...Array(10)].map((_, index) => (

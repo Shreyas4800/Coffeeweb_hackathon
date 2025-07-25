@@ -93,7 +93,7 @@ export default function CoffeeProductSlider() {
 
   return (
     <div
-      className={`w-full min-h-screen bg-gradient-to-br ${products[current].bg} transition-all duration-700 ease-in-out flex flex-col justify-center items-center py-20 px-4`}
+      className={`w-full min-h-screen bg-gradient-to-br ${products[current].bg} transition-all duration-700 ease-in-out flex flex-col justify-center items-center py-20 px-4 custom-cursor`}
     >
       {/* Header with animated cart */}
       <div className="flex items-center justify-between w-full max-w-6xl mb-6 px-6">

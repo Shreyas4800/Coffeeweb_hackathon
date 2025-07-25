@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
-      <div className="social-login-icons">
+      <div className="social-login-icons custom-cursor">
         <div className="socialcontainer">
           <div className="icon social-icon-1-1">
             <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg" className="svgIcontwit" fill="#ffcb74">

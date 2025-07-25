@@ -24,3 +24,7 @@ body{
 .animate-slideShine {
   animation: slideShine 2s infinite;
 }
+
+.custom-cursor {
+  cursor: url("/mouse.png") 10 5, auto;
+}

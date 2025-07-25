@@ -22,7 +22,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
-      className="relative bg-gradient-to-br from-[#3e2723] to-[#1b0f0a] text-white pt-16 pb-10 px-6 sm:px-12 md:px-20 lg:px-32 z-10"
+      className="relative bg-gradient-to-br from-[#3e2723] to-[#1b0f0a] text-white pt-16 pb-10 px-6 sm:px-12 md:px-20 lg:px-32 z-10 custom-cursor"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between">
         {/* Brand */}

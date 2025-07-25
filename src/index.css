@@ -9,3 +9,6 @@
 .font-Boska {
   font-family: 'Boska', sans-serif;
 }
+.custom-cursor {
+  cursor: url("./mouse.png") 0 0, auto;
+}

@@ -20,7 +20,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative z-10 px-6 py-20 md:px-20 bg-gradient-to-b from-[#1f0e0e] to-[#000000] text-white overflow-hidden"
+      className="relative z-10 px-6 py-20 md:px-20 bg-gradient-to-b from-[#1f0e0e] to-[#000000] text-white overflow-hidden custom-cursor"
     >
       {/* Floating Background Animation */}
       <div className="absolute inset-0  bg-cover opacity-[0.03] pointer-events-none z-0" />

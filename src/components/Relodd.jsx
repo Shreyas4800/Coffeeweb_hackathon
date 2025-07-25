@@ -26,7 +26,7 @@ export default function SplashScreenWrapper({ children }) {
   }, []);
 
   return (
-    <div className="w-full min-h-screen overflow-hidden bg-[#3e1f0d]"> {/* Added bg color to prevent white flash */}
+    <div className="w-full min-h-screen overflow-hidden bg-[#3e1f0d] custom-cursor"> {/* Added bg color to prevent white flash */}
       <AnimatePresence mode="wait"> {/* Smooth transition without white gap */}
         {showSplash && (
           <motion.div

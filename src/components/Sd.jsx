@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
-      <div className="container_mouse">
+      <div className="container_mouse custom-cursor">
         <span className="mouse-btn">
           <span className="mouse-scroll" />
         </span>

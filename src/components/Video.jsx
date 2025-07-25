@@ -3,7 +3,7 @@ import React from "react";
 
 function VideoSection() {
   return (
-    <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+    <section className="relative w-full h-screen overflow-hidden flex items-center justify-center custom-cursor">
       {/* 🔁 Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
