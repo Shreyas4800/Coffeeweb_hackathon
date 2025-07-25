@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom */}
+      
       <div className="text-center mt-12 pt-6 border-t border-white/10 text-xs opacity-60">
         © 2025 Sleepy Owl Coffee. All rights reserved.
       </div>
