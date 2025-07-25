@@ -4,7 +4,7 @@ import React from "react";
 function VideoSection() {
   return (
     <section className="relative w-full h-screen overflow-hidden flex items-center justify-center custom-cursor">
-      {/* 🔁 Background Video */}
+     
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/video.mp4"
@@ -15,17 +15,17 @@ function VideoSection() {
         playsInline
       />
 
-      {/* 🎨 Dark Gradient Overlay */}
+
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-10" />
 
-      {/* 🌟 Animated Content */}
+    
       <motion.div
         className="relative z-20 text-white text-center px-4 max-w-screen-md"
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        {/* ✨ Glowing Pulse Heading */}
+
         <motion.h2
           className="text-[clamp(2.5rem,6vw,4rem)] font-extrabold mb-4 drop-shadow-lg"
           style={{
@@ -39,7 +39,7 @@ function VideoSection() {
           EXPERIENCE THE POUR
         </motion.h2>
 
-        {/* Subheading */}
+      
         <motion.p
           className="text-[clamp(1rem,2.5vw,1.5rem)] font-semibold tracking-wide drop-shadow-md"
           initial={{ opacity: 0 }}
@@ -50,7 +50,7 @@ function VideoSection() {
         </motion.p>
       </motion.div>
 
-      {/* ✨ Keyframes for glow */}
+  
       <style>
         {`
           @keyframes glowPulse {
