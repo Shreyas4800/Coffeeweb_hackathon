@@ -8,7 +8,7 @@ import Insta from "./Insta";
 export default function Footer() {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
-  // Show scroll-to-top button
+  
   useEffect(() => {
     const toggleVisibility = () => {
       setShowTopBtn(window.scrollY > 400);
@@ -25,7 +25,7 @@ export default function Footer() {
       className="relative bg-gradient-to-br from-[#3e2723] to-[#1b0f0a] text-white pt-16 pb-10 px-6 sm:px-12 md:px-20 lg:px-32 z-10 custom-cursor"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between">
-        {/* Brand */}
+       
         <div className="flex-1">
           <h1 className="text-4xl font-extrabold font-Boska text-[#ffcb74] mb-4">Sleepy Owl </h1>
           <p className="text-sm leading-relaxed opacity-90">
@@ -39,7 +39,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Contact Info */}
         <div className="flex-1">
           <h2 className="text-2xl font-semibold mb-6 text-[#ffcb74]">Contact</h2>
           <ul className="space-y-4 text-sm opacity-90">
