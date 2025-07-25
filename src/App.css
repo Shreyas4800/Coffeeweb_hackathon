@@ -1,0 +1,26 @@
+.glow {
+  box-shadow: 0 0 10px #ffcb74, 0 0 20px #ffcb74;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family:Helvetica;
+}
+@keyframes slideShine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideShine {
+  animation: slideShine 2s infinite;
+}

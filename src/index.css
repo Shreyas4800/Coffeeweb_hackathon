@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'Boska';
+  src: url('/ClashDisplay-Semibold.otf') format('opentype');
+  font-weight: 10;
+  font-style: normal;
+}
+
+.font-Boska {
+  font-family: 'Boska', sans-serif;
+}
