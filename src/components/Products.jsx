@@ -64,9 +64,9 @@ const products = [
 
 export default function CoffeeProductSlider() {
   const [current, setCurrent] = useState(0);
-  const [cart, setCart] = useState({}); // { index: quantity }
+  const [cart, setCart] = useState({}); 
 
-  // Auto-slide
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % products.length);
@@ -95,7 +95,7 @@ export default function CoffeeProductSlider() {
     <div
       className={`w-full min-h-screen bg-gradient-to-br ${products[current].bg} transition-all duration-700 ease-in-out flex flex-col justify-center items-center py-20 px-4 custom-cursor`}
     >
-      {/* Header with animated cart */}
+      
       <div className="flex items-center justify-between w-full max-w-6xl mb-6 px-6">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white text-left  font-Boska ">
           Our Products 
@@ -116,9 +116,9 @@ export default function CoffeeProductSlider() {
         </div>
       </div>
 
-      {/* Slider section */}
+     
       <div className="relative w-full max-w-6xl flex justify-center items-center">
-        {/* Left */}
+    
         <button
           onClick={slideLeft}
           className="absolute left-4 sm:left-8 z-10 bg-[#3e2723]/80 p-4 rounded-full hover:bg-[#4e342e] shadow-xl hover:scale-110 transition-all"
@@ -126,7 +126,7 @@ export default function CoffeeProductSlider() {
           <ChevronLeft className="text-white w-7 h-7" />
         </button>
 
-        {/* Product */}
+      
         <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.02} transitionSpeed={2500}>
           <div className="relative group bg-[#2e1a13]/70 backdrop-blur-lg rounded-3xl text-white w-[95%] max-w-[500px] p-6 sm:p-8 shadow-2xl transform transition-all duration-700 hover:scale-105 ring-2 ring-[#ffcb74]/30 hover:ring-4 hover:ring-[#ffcb74]/70">
             <div className="relative overflow-hidden rounded-xl mb-6">
@@ -163,7 +163,7 @@ export default function CoffeeProductSlider() {
           </div>
         </Tilt>
 
-        {/* Right */}
+        
         <button
           onClick={slideRight}
           className="absolute right-4 sm:right-8 z-10 bg-[#3e2723]/80 p-4 rounded-full hover:bg-[#4e342e] shadow-xl hover:scale-110 transition-all"
@@ -172,7 +172,7 @@ export default function CoffeeProductSlider() {
         </button>
       </div>
 
-      {/* Bullets */}
+     
       <div className="flex mt-8 gap-3">
         {products.map((_, i) => (
           <span
