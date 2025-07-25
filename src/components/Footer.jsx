@@ -88,15 +88,7 @@ export default function Footer() {
         © 2025 Sleepy Owl Coffee. All rights reserved.
       </div>
 
-      {/* Scroll To Top Button */}
-      {showTopBtn && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-[#ffcb74] text-[#3e2723] p-3 rounded-full shadow-lg hover:scale-110 transition-all duration-300 z-50"
-        >
-          <ArrowUp size={20} />
-        </button>
-      )}
+      
     </motion.footer>
   );
 }
