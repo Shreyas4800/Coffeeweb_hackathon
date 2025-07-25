@@ -11,13 +11,13 @@ export default function SplashScreenWrapper({ children }) {
 
     progressInterval = setInterval(() => {
       setProgress((prev) => (prev >= 100 ? 100 : prev + 1));
-    }, 30); // Progress to 100 in ~3s
+    }, 30); 
 
-    // Delay hiding splash until progress + fade-out is complete
+
     const timer = setTimeout(() => {
       clearInterval(progressInterval);
       setShowSplash(false);
-    }, 4000); // 3s + 1s fade-out buffer
+    }, 4000); 
 
     return () => {
       clearTimeout(timer);
@@ -26,8 +26,8 @@ export default function SplashScreenWrapper({ children }) {
   }, []);
 
   return (
-    <div className="w-full min-h-screen overflow-hidden bg-[#3e1f0d] custom-cursor"> {/* Added bg color to prevent white flash */}
-      <AnimatePresence mode="wait"> {/* Smooth transition without white gap */}
+    <div className="w-full min-h-screen overflow-hidden bg-[#3e1f0d] custom-cursor"> 
+      <AnimatePresence mode="wait"> 
         {showSplash && (
           <motion.div
             key="splash"
@@ -43,7 +43,7 @@ export default function SplashScreenWrapper({ children }) {
               autoplay
             />
 
-            {/* Loading Bar */}
+           
             <div className="absolute bottom-12 w-3/4 max-w-[500px]">
               <div className="w-full h-4 bg-[#a9765a] rounded-full overflow-hidden border-2 border-[#fff]/20">
                 <div
