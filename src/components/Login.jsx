@@ -26,7 +26,7 @@ const LoginModal = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {/* Animated glowing blob */}
+         
           <motion.div
             className="absolute w-80 h-80 rounded-full bg-[#c0a080] opacity-20 blur-3xl"
             initial={{ scale: 0.8 }}
@@ -35,7 +35,7 @@ const LoginModal = () => {
             style={{ top: "30%", left: "50%", transform: "translate(-50%, -50%)" }}
           />
 
-          {/* Floating ☕ Icon */}
+         
           <motion.div
             className="absolute top-10 text-5xl"
             animate={{ y: [0, -10, 0] }}
@@ -44,10 +44,10 @@ const LoginModal = () => {
             ☕
           </motion.div>
 
-          {/* Smoke gradient */}
+          
           <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-r from-white/20 via-transparent to-white/20 opacity-20 animate-smoke" />
 
-          {/* Modal */}
+          
           <motion.div
             className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 w-[90%] max-w-md shadow-2xl text-white overflow-hidden"
             initial={{ y: -80, opacity: 0 }}
